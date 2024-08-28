@@ -1,0 +1,340 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body{ 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    text-align:right;
+    position:fixed;
+    top:0;
+    right:0px;
+}
+#navbar ul li {
+    display:inline-flex;
+    padding:3px;
+    font-weight: bold;  
+    font-size:10pt;
+    z-index:10;
+}
+
+ul li a{
+    text-decoration: none;
+    color:navy;
+}
+
+ul li a:hover{
+    color:rgb(245, 241, 241);
+    font-size:12pt;
+    background-color: black;
+    padding:8px;
+    border-radius:5px;;
+}
+
+ul li a:active{
+    color:rgb(122, 114, 238);
+    font-size:12pt;
+}
+
+ul li a:visited{
+    color:green;  
+}
+
+#welcome-section{
+    display:flex;
+    gap:150px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section .picture img{
+    width:300px;
+    height:100%;
+    margin-bottom: -5px;
+}
+
+#welcome-section h1{
+font-size:20pt;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 900;
+}
+
+#welcome-section h4{
+    font-size:10pt;
+    font-family: 'Raleway', sans-serif;
+    color: navy;
+    font-weight: 200;  
+    }
+
+#about a{
+    font-size:10pt;
+    color:white;
+    text-decoration:none;
+    background-color:black;
+    font-weight: 500;
+    padding:5px;
+    border-radius:5px;   
+    margin-left: -110pt;
+}
+
+#about a:hover{
+    color:navy;
+    background-color:white;
+}
+#about a:active{
+    color:rgb(122, 114, 238);
+    font-size:12pt;
+}
+
+#about a:visited{
+    background-color:green;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+h2{
+    text-align: center;
+    background-color:rgb(236, 228, 228);
+    padding:5px;
+    color:white;
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    text-align: center;
+    font-size:10pt; 
+    padding-top:5px;
+}
+#projects .expert a img{
+    width: 200px;
+    padding:5px;
+    background-color:rgb(236, 228, 228);
+    margin-left:15px;
+    border-radius:15px;
+    margin-top:15px;
+}
+#projects .fashion a img{
+    width: 160px;
+    padding:5px;
+    background-color:rgb(236, 228, 228);
+    margin-right:10px;
+    border-radius:15px;
+    margin-top:15px;
+}
+ #projects a,#projects p{
+    color:navy;
+    text-decoration:none;
+    font-size:8pt;
+    font-weight:bold; 
+    margin-top:-5px;
+}
+#projects p:hover{
+    color:navy;
+    font-size: 12px;
+    background-color:white;
+}
+#projects p:active{
+    color:rgb(122, 114, 238);
+    font-size:12pt;
+}
+
+#projects p:visited{
+    background-color:green;
+}
+
+#contact{
+    font-size:12px;
+    margin-top:10px;
+  text-align:left;
+}
+#contact a{
+    text-decoration: none;
+    padding-right:5px;
+    color: navy;
+}
+#contact a:hover{
+    color:rgb(245, 241, 241);
+    font-size:12pt;
+    background-color: black;
+    padding:8px;
+    border-radius:5px;
+}
+#contact a:active{
+    color:rgb(122, 114, 238);
+    font-size:12pt;
+}
+
+#contact a:visited{
+    color:green;
+}
+
+footer address{
+    text-align: right;
+    font-size:10pt;
+}
+
+
+/* media query */
+@media only screen and (min-width:400px) and (max-width: 1023px) {
+
+    nav{
+        text-align:right;
+        position:fixed;
+        top:0;
+        right:0px;
+    }
+    #navbar ul li {
+        display:inline-flex;
+        padding:3px;
+        font-weight: bold;  
+        font-size:12pt;
+        z-index:10;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color:navy;
+    }
+    
+    ul li a:hover{
+        color:rgb(245, 241, 241);
+        font-size:12pt;
+        background-color: black;
+        padding:8px;
+        border-radius:5px;;
+    }
+    
+    ul li a:active{
+        color:rgb(122, 114, 238);
+        font-size:14pt;
+    }
+    
+    ul li a:visited{
+        color:green;  
+    }
+    
+    #welcome-section{
+       margin-top:100px;
+        display:flex;
+        flex-wrap:wrap;
+      flex-direction:column;
+    }
+    
+    #welcome-section .picture img{
+        width:680px;
+        padding-top:10px;
+    }
+    #welcome-section .text{
+        margin-top:70pt;
+        margin-bottom:30px;
+    }
+    
+    #welcome-section h1{
+    font-size:35pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    }
+    
+    #welcome-section h4{
+        font-size:15pt;
+        font-family: 'Raleway', sans-serif;
+        color:navy;
+        font-weight: 200; 
+        margin:auto 0; 
+    }
+    #about a{
+        font-size:18px;
+        color:white;
+        text-decoration:none;
+        background-color:black;
+        font-weight: 500;
+        padding:5px;
+        border-radius:5px;  
+        margin: 0 auto; 
+    }
+    
+    #about a:hover{
+        color:navy;
+        background-color:white;
+    }
+    #about a:active{
+        color:rgb(122, 114, 238);
+        font-size:14pt;
+    }
+    
+    #about a:visited{
+        background-color:green;
+    }
+    
+    #projects{
+        gap:50px;
+    }
+    #projects .expert a img{
+        display:flex;
+        width:420px;
+        padding:5px;
+        background-color:rgb(236, 228, 228); 
+    }
+    
+    #projects .fashion a img{
+        display:flex;
+        width: 300px;
+        padding:5px;
+        background-color: rgb(236, 228, 228);
+    }
+    
+    #projects p{
+        font-size:12pt;
+        color: navy;
+        font-weight:500;
+        text-decoration:none; 
+        text-wrap:nowrap;
+    }
+    
+#contact{
+    font-size:12pt;
+  text-align:right;
+  margin-bottom:5px;
+}
+#contact a{
+    text-decoration: none;
+    margin-right:20px;
+    color: navy;
+    
+}
+#contact a:hover{
+    color:rgb(245, 241, 241);
+    font-size:12pt;
+    background-color: black;
+    padding:8px;
+    border-radius:5px;
+}
+#contact a:active{
+    color:rgb(122, 114, 238);
+    font-size:14pt;
+}
+#contact a:visited{
+    color:green;
+}
+    footer{
+        display: grid;
+        font-size:16px;
+        background-color:rgb(236, 228, 228);
+        padding:10px;
+    }
+    footer a{
+        text-decoration: none;
+    }
+    footer address{
+      float: right;
+        font-size:8pt;
+    }
+}
